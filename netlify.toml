@@ -1,5 +1,6 @@
 [build]
-  publish = "."
+  command = "npm run build"
+  publish = "dist"
 [[headers]]
   for = "/*"
   [headers.values]
@@ -9,5 +10,5 @@
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
 [[redirects]]
   from = "/privacy"
-  to = "/index.html"
+  to = "/privacy.html"
   status = 200
